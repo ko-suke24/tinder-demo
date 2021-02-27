@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  get 'top/index'
+  devise_for :users
+  root 'top#index'
 end
